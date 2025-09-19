@@ -1,0 +1,7 @@
+services:
+  amopsserviceimage:
+    volumes:
+    - .:/app:ro
+    environment:
+      - NODE_ENV=development
+    command: npm run dev

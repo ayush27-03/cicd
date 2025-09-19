@@ -1,0 +1,9 @@
+services:
+  amopsrepoimage:
+    image: amopsrepoimage:latest
+    build: 
+      context: .
+    ports:
+      - "9898:9796"
+    env_file:
+      - .env

@@ -1,0 +1,31 @@
+#  Here we write our services 
+
+services:
+  amopsserviceimage:
+  # will build the image using the Dockerfile in the current directory
+    build: 
+      context: .
+    ports:
+      - "9898:9797"
+      # Anonymous Volumes
+    # volumes:
+    # - .:/app:ro
+    env_file:
+      - .env
+    # command: npm run dev
+    depends_on:
+      - mongo-db
+      # Means first in memory mongo-db service will be started then only this service will be started
+    # This is useful when we have multiple services and one service depends on another service
+# Remove common for dev and prod bot
+  mongo-db:
+    image: mongo
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=root
+  # Named Volume to store the data. This volume will persist even if the container is removed
+    volumes:
+      - mongo-vol:/data/db
+
+volumes:
+  mongo-vol:

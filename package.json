@@ -1,0 +1,22 @@
+{
+  "name": "firstwinnpmpackage",
+  "version": "0.0.1",
+  "description": "my first vs code cli based self-developed npm runtime package creation",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon expressServer.js",
+    "test": "jest --ci --reporters=default --reporters=jest-junit",
+    "start": "node expressServer.js"
+  },
+  "author": "DELL",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^30.1.3",
+    "jest-junit": "^16.0.0",
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

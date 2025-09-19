@@ -1,0 +1,64 @@
+
+  Id     Duration CommandLine
+  --     -------- -----------
+   1        1.551 try { . "c:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\co…
+   2        0.626 docker images
+   3        0.712 docker build -t newamopscontainer
+   4       18.104 docker buildx build -t newamopscontainer .
+   5        0.152 cls
+   6        0.301 docker images
+   7        0.237 docker rm amopsdocker -f
+   8        1.812 docker run -d -p 9898:9898 --name amopscontainer amopsdocker
+   9        0.390 docker ps
+  10        0.168 docker rm newamopscontainer -f
+  11        0.170 docker rm amopsdocker -f
+  12        0.678 cl
+  13        0.400 scls
+  14        0.008 cls
+  15        0.317 docker images
+  16        0.212 docker ps
+  17        0.159 docker rm amopscontainer
+  18        0.792 docker rm amopscontainer -rf
+  19        0.247 docker images
+  20        0.006 cls
+  21        0.486 docker images
+  22        0.155 docker rm amopsdocker
+  23        0.255 docker images
+  24        0.210 docker images
+  25        0.003 cls
+  26       39.253 npm run express
+  27        1.589 npm run express
+  28        1.176 npm run
+  29       36.983 npm start
+  30       37.112 npm run dev
+  31        0.006 cls
+  32        0.435 docker images
+  33        0.002 cls
+  34       13.740 docker build -t amopsdockerimage .
+  35        0.940 docker image
+  36        0.265 docker images
+  37        1.226 docker run -d -p 9898:9898 --name amopsdockercontainer amopsdockerimage
+  38        0.126 cat expressServer.js
+  39        0.190 docker rm amopsdockercontainer
+  40        0.141 docker rm amopsdockerimage -f
+  41        0.658 docker rm amopsdockercontainer -f
+  42        0.289 docker images
+  43        1.760 docker run -d -p 9898:9898 --name amopsdockercontainer amopsdockerimage
+  44        0.286 docker run -v "{pwd}:/app" -d -p 9898:9898 --name amopsdockercontainer amopsdockerimage
+  45        0.663 docker rm amopsdockercontainer -f
+  46        0.344 docker run -v "{pwd}:/app" -d -p 9898:9898 --name amopsdockercontainer amopsdockerimage
+  47        1.231 docker run -v "${pwd}:/app" -d -p 9898:9898 --name amopsdockercontainer amopsdockerimage
+  48        0.719 docker rm amopsdockercontainer -f
+  49        1.008 docker run -v "${pwd}:/app" -d -p 9898:9898 --name amopsdockercontainer amopsdockerimage
+  50        0.614 docker rm amopsdockercontainer -f
+  51        0.936 docker run -v "${pwd}:/app" -d -p 9898:9898 --name amopsdockercontainer amopsdockerimage
+  52        0.178 docker ps
+  53        0.236 docker images
+  54        0.190 docker logs amopsdockercontainer 
+  55        0.150 docker rm amopsdockercontainer
+  56        0.673 docker rm amopsdockercontainer -f
+  57        0.250 Get-History
+  58        0.095 Get-History > dockerSessionPart1.txt
+  59        0.082 $MaximumHistoryCount
+  60        0.005 cls
+
